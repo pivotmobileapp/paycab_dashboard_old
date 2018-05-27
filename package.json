@@ -1,20 +1,27 @@
 {
-	"name": "StrapTaxiApp-webDashboard",
-	"version": "4.1.0",
-	"engines": {
-		"node": "6.11.x"
-	},
-	"scripts": {
-		"start": "node server",
-		"postinstall": "cd react/ && npm install && npm install --only=dev --no-shrinkwrap",
-		"heroku-postbuild": "cd react/ && npm install && npm install --only=dev --no-shrinkwrap && npm run build"
-	},
-	"cacheDirectories": ["node_modules", "react/node_modules"],
-	"dependencies": {
-		"express": "^4.16.2"
-	},
-	"keywords": ["express", "heroku", "create-react-app", "react"],
-	"devDependencies": {},
-	"author": "GeekyAnts | GeekRishabh",
-	"homepage": "https://market.nativebase.io/view/react-native-taxi-app-with-backend"
+  "name": "StrapTaxiApp-webDashboard",
+  "version": "4.1.0",
+  "engines": {
+    "node": "6.11.x"
+  },
+  "scripts": {
+    "start": "node server",
+    "heroku-postbuild": "cd react/ && npm install && npm install --only=dev --no-shrinkwrap && npm run build"
+  },
+  "cacheDirectories": [
+    "node_modules",
+    "react/node_modules"
+  ],
+  "dependencies": {
+    "express": "^4.16.2"
+  },
+  "keywords": [
+    "express",
+    "heroku",
+    "create-react-app",
+    "react"
+  ],
+  "devDependencies": {},
+  "author": "GeekyAnts | GeekRishabh",
+  "homepage": "https://market.nativebase.io/view/react-native-taxi-app-with-backend"
 }
